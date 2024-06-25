@@ -8,7 +8,7 @@ Scraping data from nba.com/stats
 pip install git+https://github.com/szymonjoz/NBAScraper.git
 ```
 
-## Example usage 
+## Usage example 
 ```
 from NBAScraper import get_boxscores
 get_boxscores(season=2023, sub="traditional", save="boxscores.csv")
