@@ -86,7 +86,7 @@ def get_boxscores(season: int, sub: str, group: str = "players", segment: str = 
                 time.sleep(2)
                 retries -= 1
 
-        if (group != "teams" or s != "PlayIn") and (s != "PlayIn" or season == 202):
+        if not ((season == 2020 and s == "PlayIn") or (s == "PlayIn" and group == "team")):
             if select:
                 select = Select(select.find_element("class name", "DropDown_select__4pIg9"))
 
