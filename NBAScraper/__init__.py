@@ -112,7 +112,6 @@ def get_boxscores(season: int, sub: str, group: str = "players", segment: str = 
         except NoSuchElementException:
             print("Awaiting table")
             table = driver.find_element("class name", "Crom_table__p1iZz").get_attribute("outerHTML")
-        driver.close()
 
         game_ids = re.findall("\/game\/(\d{10})", table)
         if group == "players":
@@ -160,6 +159,8 @@ def get_boxscores(season: int, sub: str, group: str = "players", segment: str = 
                               ["win"]]
 
             tables.append(table)
+    
+    driver.close()
 
     if len(tables) > 1:
         df = pd.concat(tables)
