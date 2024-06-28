@@ -5,7 +5,7 @@ setup(
     version='1.0',
     packages=["NBAScraper"],
     package_data={
-        'NBAScrape': ['preschedule.csv'],
+        'NBAScraper': ['preschedule.csv'],
     },
     install_requires=[
         "selenium>=4",
