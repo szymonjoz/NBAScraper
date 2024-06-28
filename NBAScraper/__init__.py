@@ -7,7 +7,7 @@ import re
 import pandas as pd
 from datetime import datetime
 
-_preschedule = "preschedule.csv"
+_preschedule = __file__[:-11] + "preschedule.csv"
 TEAM_IDS = {'ATL': 1610612737, 'BKN': 1610612751, 'BOS': 1610612738, 'CHA': 1610612766, 'CHH': 1610612766,
             'CHI': 1610612741, 'CLE': 1610612739, 'DAL': 1610612742, 'DEN': 1610612743, 'DET': 1610612765,
             'GSW': 1610612744, 'HOU': 1610612745, 'IND': 1610612754, 'LAC': 1610612746, 'LAL': 1610612747,
