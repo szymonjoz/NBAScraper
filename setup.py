@@ -6,7 +6,7 @@ setup(
     packages=["NBAScraper"],
     package_data={
         'NBAScrape': ['preschedule.csv'],
-    }
+    },
     install_requires=[
         "selenium>=4",
         "pandas>=2",
