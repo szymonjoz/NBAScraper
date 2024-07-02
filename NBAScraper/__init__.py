@@ -106,7 +106,7 @@ def get_boxscores(season: int, sub: str, group: str = "players", segment: str = 
             except AttributeError:
                 pass
 
-        time.sleep(1)
+        time.sleep(2)
         try:
             table = driver.find_element("class name", "Crom_table__p1iZz").get_attribute("outerHTML")
         except NoSuchElementException:
